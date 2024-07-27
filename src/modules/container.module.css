@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.midContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1120px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .midContainer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .midContainer {
+        flex-direction: column;
+    }
+}
